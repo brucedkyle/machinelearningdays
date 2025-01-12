@@ -1,0 +1,213 @@
+site_name: xolv Samples, Demos, Docs
+site_url: https://xolv.info/
+extra_css:
+  - stylesheets/extra.css
+nav:
+  - Home: index.md
+  - AI ML Data Science: 
+    - Overview: ./ai-ml-datascience/index.md
+    - Set up:
+      - Dev, GPU, Notebook:
+        - Set up Jupyter Notebook: ./ai-ml-datascience/notebook/startjupyterinenv.md
+        - Set up secrets locally: ./ai-ml-datascience/notebook/setupsecrets.md
+        - Set up GPU on dev: ./ai-ml-datascience/gpu/setupnvidiadriver.md
+        - Jupyter Docker Stacks: ./ai-ml-datascience/containers/jupyterdockerstacks.md
+        - Set up GPU for Podman: ./ai-ml-datascience/gpu/setupmlonwindows.md
+        - Set up secrets on Podman: ./ai-ml-datascience/containers/setuptokensforcontainers.md
+        - Dotenv: ./ai-ml-datascience/notebook/setupsecrets.md
+      - Set up Pytorch: ./ai-ml-datascience/gpu/installpytorch.md
+      - Set up Tensorflow [Medium]: https://towardsdatascience.com/tensorflow-gpu-installation-made-easy-use-conda-instead-of-pip-52e5249374bc
+    - Large Language Models:
+      - LLM Concepts: ./ai-ml-datascience/llm/largelanguage.md
+      - LLM Tooling: ./ai-ml-datascience/llm/llm-tooling.md
+      - Prompt Engineering:
+        - Prompt Engineering: ./ai-ml-datascience/llm/prompt-engineering.md
+        - Advanced prompting: ./ai-ml-datascience/llm/advanced-prompting.md
+    - RAG:
+      - RAG Overview: ./ai-ml-datascience/llm/rag-overview.md
+      - RAG chatbot app with ChatGPT LangChain [GitHub]: https://github.com/brucedkyle/xolv-site/blob/main/prototype/
+      - Walkthroughs:
+        - RAG quickstart: ./ai-ml-datascience/llm/rag-pipeline-quickstart.md
+        - RAG pipeline indexing: ./ai-ml-datascience/llm/rag-pipeline-index-walkthrough.md
+    - Text classification:
+      - Using Hugging Face [GitHub]: https://github.com/brucedkyle/xolv-site/blob/main/nlm-pattern/text-classification/README.md
+    - Samples:
+      - OpenAI hello notebook [GitHub]: https://github.com/brucedkyle/xolv-site/blob/main/nlm-pattern/openai-helloworld/README.md
+      - Build a local AI co-pilot [IBM]: https://developer.ibm.com/tutorials/awb-local-ai-copilot-ibm-granite-code-ollama-continue/
+  - Containers Kubernetes OpenShift:
+    - Containers:
+      - RHEL on Windows: ./ocp/rhel/installrhel.md
+      - Podman: ./kubernetes/podman.md
+    - Kubernetes:
+      - Setup AKS using ARM template: ./azure/aks.md
+      - Setup AKS using Terraform: ./azure/aks-terraform.md
+      - Security: ./ocp/security.md
+    - OpenShift:
+      - Business value: ./ocp/value.md  
+      - Deployment guide~: https://ibm.github.io/production-gitops/infrastructure/infra-overview/
+      - Code patterns: 
+        - IBM~: https://developer.ibm.com/technologies/containers/patterns/
+        - Microsoft~: https://learn.microsoft.com/en-us/azure/architecture/guide/choose-azure-container-service
+        - Red Hat~: https://www.redhat.com/architect/portfolio/
+        - Multicloud development~: https://developer.ibm.com/?q=%20&DWContentType[0]=Code%20patterns&DWPractice[0]=AIOps
+      - Workshops:
+        - OCP architecture workshop: ./ocp/architecture.md
+        - Operators hands-on: ./ocp/operators.md
+        - Deploy sample web service~: https://www.redhat.com/sysadmin/deploy-web-service-openshift
+        - Install OpenShift Container Storage~: https://pages.github.ibm.com/dwakeman/random-thoughts/openshift/storage/ocs/
+        - Migrate from Kubernetes to OpenShift~: https://developer.ibm.com/learningpaths/migrate-kubernetes-openshift/
+        - Install EKC logging Operator: ./ocp/elasticsearch.md
+        - Deploy PostgreSQL: ./ocp/postgresql.md
+#        - Cloud Native Toolkit DevOps: ./ocp/devops.md
+        - Install Open Data Foundation (ODF) lab: ./ocp/odf.md
+        - GitOps for Advanced Cluster Management (RHACM): ./ocp/advancedclustermanagement.md
+        - Advanced Cluster Security (RHACS): ./ocp/clustersecurity.md
+        - Capacity planning~: https://www.ibm.com/cloud/architecture/articles/ibmaot-redhat-openshift/02-solutions-guide-capacity-planning-capacity-planning
+        - Sample applications: 
+          - Hello world~: https://developers.redhat.com/articles/2021/10/01/new-application-samples-red-hat-openshift-48#
+          - Persistent volume framework demo~: https://developers.redhat.com/blog/2020/10/22/persistent-storage-in-action-understanding-red-hat-openshifts-persistent-volume-framework#
+          - Stock trader~: ./ocp/stocktrader.md
+      - OpenShift on AWS~: https://www.rosaworkshop.io/
+      - OCP on Azure:
+        - Introduction to Azure: ./ocp/azure.md
+        - Install ARO Cluster: ./ocp/aro.md 
+        - Install OCP on Azure for Ops: ./azure/OpsInstallOpenShiftOnAzure.md
+        - ARO Solution Architecture~: https://www.redhat.com/architect/portfolio/detail/32
+        - Install a Bastion on Azure: ./azure/SetupBastionEnvironment.md
+        - Install OCP on Azure: ./azure/DevInstallOpenShiftOnAzure.md
+        - Install CP4D on Azure: ./azure/CreateCP4DonAzure.md
+        - Sample OCP/Cloud Pak architecture: ./azure/media/openshiftwithaiops.svg 
+      - Red Hat OpenShift Local:
+        - About: ./ocp/local.md
+        - Install on Windows: ./ocp/openshiftlocal/install.md
+        - Uninstall on Windows: ./ocp/openshiftlocal/uninstall.md
+      - MicroShift (OpenShift on Edge devices):
+        - About MicroShift~: https://next.redhat.com/project/microshift/
+        - Home GitOps Lab Environment~: https://cloud.redhat.com/blog/how-to-build-a-home-kubernetes-lab-with-microshift-and-gitops
+  - Software Defined Infrastructure:
+    - Overview: ./deploy/index.md
+    - Templates & DevOps:
+      - Azure Resource Templates & DevOps: ./azure/SampleARMwithScripts.md
+      - Setup Subscription: ./azure/compliance/setup-subscription.md
+      - Resource Management: ./azure/compliance/resource-management.md
+    - Compliance:
+      - Governance: ./azure/compliance/governance.md
+      - Landing Zone: ./azure/Landingzone.md
+      - Setup Management Group: ./azure/compliance/setup-management-group.md
+      - Azure Policy: ./azure/compliance/azure-policy.md
+      - Regulatory Compliance: ./azure/compliance/regulatory-compliance.md
+      - Security Center: ./azure/compliance/security-center.md 
+      - Log Analytics for Compliance: ./azure/compliance/log-analytics.md
+    - Containers:
+      - Set up local Podman Image Registry [Red Hat]:  https://www.redhat.com/sysadmin/simple-container-registry
+      - Deploy to local registry: ./deploy/deploytolocalregistry.md
+      - Deploy to Azure:
+          - Setup AKS using ARM template: ./azure/aks.md
+          - Setup AKS using Terraform: ./azure/aks-terraform.md
+          - Create Azure container registry (CLI) [Azure]: https://learn.microsoft.com/en-us/azure/container-instances/container-instances-tutorial-prepare-acr 
+          - Deploy container to App Services [Azure]: https://learn.microsoft.com/en-us/azure/app-service/quickstart-custom-container?tabs=python&pivots=container-linux-vscode
+      - Deploy to OpenShift: 
+          - Using GitHub: ./deploy/deploycontaineropenshift.md
+          - Without Dockerfile: ./deploy/deploycontainerwithoutDockerfile.md
+    - Models:
+      - Deploying Machine Learning Models [KD Nuggets]: https://www.kdnuggets.com/deploying-machine-learning-models-a-step-by-step-tutorial
+  - Enterprise Architectures:
+    - Portfolio architectures: ./portfolioarchitectures.md
+    - Supply chain:
+          - Supply chain optimization: ./supplychain/supplychain.md
+          - Demand risk: ./supplychain/demandrisk.md
+          - Loss management: ./supplychain/lossmanagement.md
+          - Timeliness: ./supplychain/timeliness.md
+          - Perfect order: ./supplychain/perfectorder.md
+          - Intelligent order: ./supplychain/intelligentorder.md
+          - Returns: ./supplychain/returns.md
+          - Disaster readiness: ./supplychain/disasterreadiness.md
+    - Sustainable enterprise:
+        - Environmental management systems: ./sustainableenterprise/sustainableenterprise.md
+        - Transparent supply: ./sustainableenterprise/transparentsupply.md
+        - Smart energy: ./sustainableenterprise/energy.md
+        - Green IT: ./sustainableenterprise/greenit.md
+        - Sustainable facility: ./sustainableenterprise/sustainablefacility.md
+        - Asset lifecycle: ./sustainableenterprise/assetlifecycle.md
+theme: 
+  name: material
+  features:
+    - navigation.tabs
+    - navigation.sections
+    - toc.integrate
+    - content.code.annotation
+    - content.code.copy
+    - header.autohide
+    - navigation.footer
+    - content.action.edit
+    - content.action.view
+    - search.suggest
+    - search.share
+    - content.code.copy
+    - content.code.annotate
+  language: en
+  icon: 
+    repo: fontawesome/brands/github
+    edit: material/pencil 
+    view: material/eye
+    admonition:
+      note: octicons/tag-16
+      abstract: octicons/checklist-16
+      info: octicons/info-16
+      tip: octicons/squirrel-16
+      success: octicons/check-16
+      question: octicons/question-16
+      warning: octicons/alert-16
+      failure: octicons/x-circle-16
+      danger: octicons/zap-16
+      bug: octicons/bug-16
+      example: octicons/beaker-16
+      quote: octicons/quote-16
+  logo: ./media/my-xolv.info.png
+  palette:
+    # Palette toggle for light mode
+    - media: "(prefers-color-scheme: light)"
+      scheme: default
+      toggle:
+        icon: material/toggle-switch
+        name: Switch to dark mode
+    # Palette toggle for dark mode
+    - media: "(prefers-color-scheme: dark)"
+      scheme: slate
+      toggle:
+        icon: material/toggle-switch-off-outline
+        name: Switch to light mode
+plugins:
+  - git-revision-date-localized:
+      enable_creation_date: true
+  - search:
+      lang: en
+markdown_extensions:
+  - admonition
+  - pymdownx.details
+  - pymdownx.superfences
+  - pymdownx.betterem
+  - pymdownx.caret
+  - pymdownx.mark
+  - pymdownx.tilde
+  - attr_list
+  - pymdownx.smartsymbols
+  - tables
+  - footnotes
+  - pymdownx.critic
+  - pymdownx.caret
+  - pymdownx.keys
+  - pymdownx.mark
+  - pymdownx.tilde
+  - def_list
+  - pymdownx.inlinehilite
+  - pymdownx.snippets
+  - pymdownx.highlight:
+      anchor_linenums: true
+      line_spans: __span
+      pygments_lang_class: true
+  - pymdownx.tasklist:
+      custom_checkbox: true
+  - pymdownx.tabbed:
+      alternate_style: true
+copyright: Copyright &copy; 2024 XOLV LLC
